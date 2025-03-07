@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.6] - 2025-03-07
+
+### Changed
+
+- 将 Android Device Core 作为弱依赖
+
 ## [0.0.5] - 2025-03-07
 
 ### Added

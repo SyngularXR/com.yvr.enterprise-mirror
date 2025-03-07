@@ -1,3 +1,4 @@
+#if USE_ANDROID_DEVICE_CORE
 using YVR.AndroidDevice.Core;
 
 namespace YVR.Enterprise.Device
@@ -28,3 +29,4 @@ namespace YVR.Enterprise.Device
         public const string changeThirdHomeState = "changeThirdHomeState";
     }
 }
+#endif
