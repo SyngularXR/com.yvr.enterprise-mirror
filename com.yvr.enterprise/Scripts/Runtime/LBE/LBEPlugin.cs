@@ -1,6 +1,6 @@
 using System;
 
-namespace YVR.LBE
+namespace YVR.Enterprise.LBE
 {
     public abstract class LBEPlugin
     {

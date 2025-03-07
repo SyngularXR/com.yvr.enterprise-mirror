@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using YVR.Core;
 
-namespace YVR.LBE
+namespace YVR.Enterprise.LBE
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct MarkerTrackingUpdateData

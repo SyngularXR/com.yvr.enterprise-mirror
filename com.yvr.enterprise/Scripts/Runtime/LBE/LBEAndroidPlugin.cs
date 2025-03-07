@@ -8,7 +8,7 @@ using YVR.Core;
 
 // ReSharper disable ClassNeverInstantiated.Global
 
-namespace YVR.LBE
+namespace YVR.Enterprise.LBE
 {
     public class LBEAndroidPlugin : LBEPlugin
     {
