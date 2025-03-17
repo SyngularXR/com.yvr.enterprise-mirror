@@ -1,4 +1,6 @@
-namespace YVR.Enterprise
+// ReSharper disable InconsistentNaming
+
+namespace YVR.Enterprise.Camera
 {
     public enum VSTCameraResolutionType
     {

@@ -1,8 +1,9 @@
 using System.Runtime.InteropServices;
+using YVR.Enterprise.Render;
 
-namespace YVR.Enterprise
+namespace YVR.Enterprise.Camera
 {
-    public static class YVREnterprisePlugin
+    public static class YVRVSTCameraPlugin
     {
         [DllImport("enterprisePlugin")]
         private static extern void YVRSetVSTCameraFrequency(VSTCameraFrequencyType freq);
@@ -29,7 +30,8 @@ namespace YVR.Enterprise
         private static extern void YVRGetVSTCameraOutputSource(ref VSTCameraSourceType sourceType);
 
         [DllImport("enterprisePlugin")]
-        private static extern void YVRGetVSTCameraIntrinsicExtrinsic(YVREyeNumberType eyeNumberType, ref VSTCameraIntrinsicExtrinsicData data);
+        private static extern void YVRGetVSTCameraIntrinsicExtrinsic(YVREyeNumberType eyeNumberType,
+                                                                     ref VSTCameraIntrinsicExtrinsicData data);
 
         [DllImport("enterprisePlugin")]
         private static extern void YVROpenVSTCamera();
@@ -40,10 +42,13 @@ namespace YVR.Enterprise
         [DllImport("enterprisePlugin")]
         private static extern void YVRAcquireVSTCameraFrame(ref VSTCameraFrameData frameData);
 
-        public static void SetVSTCameraFrequency(VSTCameraFrequencyType freq)
-        {
-            YVRSetVSTCameraFrequency(freq);
-        }
+        [DllImport("yvrplugin")]
+        private static extern void YVRGetRenderScale(string packageName, ref YVRRenderScaleBuffers renderScaleBuffers);
+
+        [DllImport("yvrplugin")]
+        private static extern void YVRSetRenderScale(string packageName, YVRRenderScale renderScale);
+
+        public static void SetVSTCameraFrequency(VSTCameraFrequencyType freq) { YVRSetVSTCameraFrequency(freq); }
 
         public static void GetVSTCameraFrequency(ref VSTCameraFrequencyType freq)
         {
@@ -60,10 +65,7 @@ namespace YVR.Enterprise
             YVRGetVSTCameraResolution(ref resolution);
         }
 
-        public static void SetVSTCameraFormat(VSTCameraFormatType formatType)
-        {
-            YVRSetVSTCameraFormat(formatType);
-        }
+        public static void SetVSTCameraFormat(VSTCameraFormatType formatType) { YVRSetVSTCameraFormat(formatType); }
 
         public static void GetVSTCameraFormat(ref VSTCameraFormatType formatType)
         {
@@ -80,24 +82,29 @@ namespace YVR.Enterprise
             YVRGetVSTCameraOutputSource(ref sourceType);
         }
 
-        public static void GetVSTCameraIntrinsicExtrinsic(YVREyeNumberType eyeNumberType,ref VSTCameraIntrinsicExtrinsicData data)
+        public static void GetVSTCameraIntrinsicExtrinsic(YVREyeNumberType eyeNumberType,
+                                                          ref VSTCameraIntrinsicExtrinsicData data)
         {
-            YVRGetVSTCameraIntrinsicExtrinsic(eyeNumberType,ref data);
+            YVRGetVSTCameraIntrinsicExtrinsic(eyeNumberType, ref data);
         }
 
-        public static void OpenVSTCamera()
-        {
-            YVROpenVSTCamera();
-        }
+        public static void OpenVSTCamera() { YVROpenVSTCamera(); }
 
-        public static void CloseVSTCamera()
-        {
-            YVRCloseVSTCamera();
-        }
+        public static void CloseVSTCamera() { YVRCloseVSTCamera(); }
 
         public static void AcquireVSTCameraFrame(ref VSTCameraFrameData frameData)
         {
             YVRAcquireVSTCameraFrame(ref frameData);
+        }
+
+        public static void GetRenderScale(string packageName, ref YVRRenderScaleBuffers renderScaleBuffers)
+        {
+            YVRGetRenderScale(packageName, ref renderScaleBuffers);
+        }
+
+        public static void SetRenderScale(string packageName, YVRRenderScale renderScale)
+        {
+            YVRSetRenderScale(packageName, renderScale);
         }
     }
 }

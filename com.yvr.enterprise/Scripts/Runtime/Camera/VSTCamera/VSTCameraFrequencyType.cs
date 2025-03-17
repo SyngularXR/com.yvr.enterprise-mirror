@@ -1,4 +1,4 @@
-namespace YVR.Enterprise
+namespace YVR.Enterprise.Camera
 {
     public enum VSTCameraFrequencyType
     {

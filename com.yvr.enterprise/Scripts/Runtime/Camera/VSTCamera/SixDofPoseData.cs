@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace YVR.Enterprise
+namespace YVR.Enterprise.Camera
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct SixDofPoseData
