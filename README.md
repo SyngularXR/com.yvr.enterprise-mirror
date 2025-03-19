@@ -25,7 +25,7 @@ Replace the following placeholders with the actual values:
     <p align="center">
         com.yvr.enterprise Package the mirror repository
         <br />
-        <a href="https://github.com/PlayForDreamDevelopers/com.yvr.enterprise-mirror"><strong>查看文档 »</strong></a>
+        <a href="https://github.com/PlayForDreamDevelopers/com.yvr.enterprise-mirror"><strong>View Documentation»</strong></a>
         <br />
         <a href="#samples">View Samples</a>
         &middot;
@@ -35,7 +35,6 @@ Replace the following placeholders with the actual values:
         &middot;
         <a href="https://github.com/PlayForDreamDevelopers/com.yvr.enterprise-mirror/issues/new?template=documentation_update.yml">Improve Documentation</a>
     </p>
-
 </div>
 
 <!-- Add callouts here if required-->
@@ -49,7 +48,9 @@ Replace the following placeholders with the actual values:
     For package projects, describe what the package does, and links to the sample projects.
 
     -->
-This is the image repository for the `com.yvr.core` package.  The package is designed to provide XR functionality for Unity projects on Play For Dream devices.  The package was developed by PlayForDreamDevelopers.
+
+This is the mirror repository for the `com.yvr.enterprise` package, which is an SDK for PlayForDream Enterprise developers that provides additional data acquisition and control of the device.
+
 ### Samples
 
 - [Device Unity Sample](https://github.com/PlayForDreamDevelopers/DeviceSample-Unity):
