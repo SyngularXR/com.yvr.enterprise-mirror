@@ -9,7 +9,7 @@
     <p align="center">
         com.yvr.enterprise 包的镜像仓库
         <br />
-        <a href="https://github.com/PlayForDreamDevelopers/com.yvr.enterprise-mirror"><strong>查看文档 »</strong></a>
+        <a href="https://playfordreamdevelopers.github.io/com.yvr.enterprise-mirror/Documentation_CN/Introduction.html"><strong>查看文档 »</strong></a>
         <br />
         <br />
         <a href="#samples">查看示例</a>

@@ -25,7 +25,7 @@ Replace the following placeholders with the actual values:
     <p align="center">
         com.yvr.enterprise Package the mirror repository
         <br />
-        <a href="https://github.com/PlayForDreamDevelopers/com.yvr.enterprise-mirror"><strong>View Documentation»</strong></a>
+        <a href="https://playfordreamdevelopers.github.io/com.yvr.enterprise-mirror/Documentation/Introduction.html"><strong>View Documentation»</strong></a>
         <br />
         <a href="#samples">View Samples</a>
         &middot;
