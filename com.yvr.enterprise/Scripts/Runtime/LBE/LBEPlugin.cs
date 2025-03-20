@@ -1,11 +1,12 @@
 using System;
+using UnityEngine.Internal;
 
 namespace YVR.Enterprise.LBE
 {
     public abstract class LBEPlugin
     {
         private static LBEPlugin s_Instance;
-        public const int spaceUuidMaxSize = 4;
+        [ExcludeFromDocs] public const int spaceUuidMaxSize = 4;
 
         public static LBEPlugin instance
         {

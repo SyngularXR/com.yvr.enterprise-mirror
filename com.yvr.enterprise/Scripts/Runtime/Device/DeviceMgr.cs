@@ -48,9 +48,6 @@ namespace YVR.Enterprise.Device
             get => ajcBase.CallJNI<bool>(DeviceElements.isBrightnessAdjustmentRestricted);
             set => ajcBase.CallJNI(DeviceElements.restrictBrightnessAdjustment, value);
         }
-
-
-        public void SetBrightness(int brightness) => ajcBase.CallJNI(DeviceElements.setBrightness, brightness);
     }
 }
 #endif

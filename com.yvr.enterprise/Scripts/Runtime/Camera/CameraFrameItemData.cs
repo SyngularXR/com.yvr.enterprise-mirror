@@ -11,8 +11,20 @@ namespace YVR.Enterprise.Camera
         public int height;
         public int stride;
         public int format;
+
+        /// <summary>
+        ///  Exposure duration in nano seconds
+        /// </summary>
         public int exposureDuration;
+
+        /// <summary>
+        /// Start of exposure timestamp in nano seconds (nanosecond CLOCK_BOOT_TIME)
+        /// </summary>
         public long soeTimestamp;
+
+        /// <summary>
+        /// Start of exposure timestamp in nano seconds (nanosecond with qtimer)
+        /// </summary>
         public long soeTimestampq;
         public int gain;
         public int dataSize;
