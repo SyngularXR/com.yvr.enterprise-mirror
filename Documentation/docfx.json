@@ -30,10 +30,10 @@
             {
                 "src": "../com.yvr.enterprise/",
                 "files": [
-                    "Documentation~/**.md",
-                    "Documentation~/**/**/toc.yml",
-                    "Documentation_CN~/**.md",
-                    "Documentation_CN~/**/**/toc.yml"
+                    "Documentation/**.md",
+                    "Documentation/**/**/toc.yml",
+                    "Documentation_CN/**.md",
+                    "Documentation_CN/**/**/toc.yml"
                 ]
             }
         ],
@@ -46,10 +46,10 @@
             {
                 "src": "../com.yvr.enterprise/",
                 "files": [
-                    "Documentation~/**.png",
-                    "Documentation~/**.jpg",
-                    "Documentation_CN~/**.png",
-                    "Documentation_CN~/**.jpg"
+                    "Documentation/**.png",
+                    "Documentation/**.jpg",
+                    "Documentation_CN/**.png",
+                    "Documentation_CN/**.jpg"
                 ]
             }
         ],
