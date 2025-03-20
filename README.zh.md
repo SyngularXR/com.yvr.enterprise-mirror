@@ -20,7 +20,6 @@
         &middot;
         <a href="https://github.com/PlayForDreamDevelopers/com.yvr.enterprise-mirror/issues/new?template=documentation_update.yml">改进文档</a>
     </p>
-
 </div>
 
 ## 关于项目
@@ -29,7 +28,12 @@
 
 ### 示例
 
-- [Device Unity Sample](https://github.com/PlayForDreamDevelopers/DeviceSample-Unity):一系列展现如何使用 PFDM 企业版 Device SDK 的 Unity 示例。
+- [Device Unity Sample](https://github.com/PlayForDreamDevelopers/DeviceSample-Unity):
+  一系列展现如何使用 PFDM 企业版 Device SDK 的 Unity 示例。
+- [LBE Unity Sample](https://github.com/PlayForDreamDevelopers/LBESample-Unity):
+  一系列用于展示 LBE 的 Unity 示例.
+- [CameraSample-Unity](https://github.com/PlayForDreamDevelopers/CameraSample-Unity): 
+  示例展示如何获取 Play For Dream MR 设备的硬件相机信息。
 
 
 ## 要求

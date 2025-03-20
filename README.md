@@ -54,7 +54,11 @@ This is the mirror repository for the `com.yvr.enterprise` package, which is an 
 ### Samples
 
 - [Device Unity Sample](https://github.com/PlayForDreamDevelopers/DeviceSample-Unity):
-A series of Unity examples showing how to use the PFDM Enterprise Edition Device SDK.
+    A series of Unity examples showing how to use the PFDM Enterprise Edition Device SDK.
+- [LBE Unity Sample](https://github.com/PlayForDreamDevelopers/LBESample-Unity):
+    A collection of Unity samples for LBE.
+- [CameraSample-Unity](https://github.com/PlayForDreamDevelopers/CameraSample-Unity): 
+  Samples to demonstrate how to get hardware camera information of the Play For Dream MR Devices.
 <!-- Link to first sample project -->
 <!-- Link to second sample project -->
 
