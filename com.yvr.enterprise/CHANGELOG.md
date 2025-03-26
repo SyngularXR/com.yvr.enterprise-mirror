@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.10] - 2025-03-18
+
+### Added
+
+- 删除 EyeTracking Camera 接口
+
 ## [0.0.9] - 2025-03-18
 
 ### Added

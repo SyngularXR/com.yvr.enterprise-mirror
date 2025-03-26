@@ -22,9 +22,6 @@
 | [UnsubscribeFrame][unsubscribe-frame]                | 取消订阅相机帧数据                                                     |
 | [AcquireTrackingCameraFrame][acquire-tracking-frame] | 获取相机帧数据                                                         |
 | [SetTrackingCameraFrequency][set-tracking-frequency] | 设置相机帧率                                                           |
-
--   目前 [SetTrackingCameraFrequency][set-tracking-frequency] 的类型仅支持 `TrackingCameraType.EyeTracking`
-
 ## VST 相机数据
 
 VST 相机的数据，可以通过 [YVRVSTCameraPlugin][vst-plugin] 获取，目前主要包含有以下接口：

@@ -5,6 +5,7 @@
 > For more information, please refer to our open source project [LBE Sample](https://github.com/PlayForDreamDevelopers/LBESample-Unity).
 
 To utilize LBE-related interfaces, first enable the "Large Space Support" option on the YVRManager script:
+
 ![Large Space Support](assets/LBE/2025-03-19-15-30-05.png)
 
 LBE-related interfaces are defined in [LBEPlugin][lbe-plugin] and currently include:

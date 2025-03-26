@@ -5,6 +5,7 @@
 > 可参考我们的开源项目 [LBE 示例](https://github.com/PlayForDreamDevelopers/LBESample-Unity) 获取更多信息
 
 为使用 LBE 相关的接口，你首先需要勾选 `YVRManager` 脚本上的 `Large Space Support` 选项：
+
 ![Large Space Support](assets/LBE/2025-03-19-15-30-05.png)
 
 LBE 相关的接口都定义在 [LBEPlugin](xref:YVR.Enterprise.LBE.LBEPlugin) 中，目前主要包含有一下接口：
