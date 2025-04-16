@@ -48,6 +48,10 @@ namespace YVR.Enterprise.Device
             get => ajcBase.CallJNI<bool>(DeviceElements.isBrightnessAdjustmentRestricted);
             set => ajcBase.CallJNI(DeviceElements.restrictBrightnessAdjustment, value);
         }
+        public  void EnableIPDAutoAdjustment(bool enable){ DevicePlugin.Instance.SetIPDEnable(enable); }
+        public  bool GetIPDEnable() { return DevicePlugin.Instance.GetIPDEnable();}
+        public  void SetIPDValue(float value) { DevicePlugin.Instance.SetIPDValue(value);}
+        public  float GetIPDVale() { return DevicePlugin.Instance.GetIPDVale();}
     }
 }
 #endif

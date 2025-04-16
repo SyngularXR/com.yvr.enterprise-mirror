@@ -4,5 +4,5 @@
   href: Device.md
 - name: 大空间接口
   href: LBE.md
-- name: 追踪相机数据
+- name: 相机数据
   href: Camera.md
