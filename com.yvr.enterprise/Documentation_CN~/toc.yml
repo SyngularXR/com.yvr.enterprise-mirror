@@ -2,6 +2,9 @@
   href: ./Introduction.md
 - name: 设备信息与控制
   href: Device.md
+  items:
+  - name: 应用控制
+    href: Application.md
 - name: 大空间接口
   href: LBE.md
 - name: 相机数据

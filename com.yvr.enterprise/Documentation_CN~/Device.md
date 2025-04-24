@@ -4,7 +4,7 @@
 >
 > 可参考我们的开源项目 [设备示例](https://github.com/PlayForDreamDevelopers/DeviceSample-Unity) 获取更多信息
 
-所有设备相关的信息和控制都可以通过 [DeviceMgr](xref:YVR.Enterprise.Device.DeviceMgr) 实现，支持的接口有，其中带 `*` 的表示该数据是可写入的（可设置）：
+所有设备相关的信息和控制都可以通过 [DeviceMgr](xref:YVR.Enterprise.Device.DeviceMgr) 实现，支持的接口中带 `*` 的表示该数据是可写入的（可设置）：
 
 | 信息                                                                                                     | 说明             |
 | -------------------------------------------------------------------------------------------------------- | ---------------- |
@@ -18,3 +18,4 @@
 | [volumeAdjustmentRestricted \*](xref:YVR.Enterprise.Device.DeviceMgr.volumeAdjustmentRestricted)         | 音量调节是否受限 |
 | [brightness \*](xref:YVR.Enterprise.Device.DeviceMgr.brightness)                                         | 当前亮度         |
 | [brightnessAdjustmentRestricted \*](xref:YVR.Enterprise.Device.DeviceMgr.brightnessAdjustmentRestricted) | 亮度调节是否受限 |
+
