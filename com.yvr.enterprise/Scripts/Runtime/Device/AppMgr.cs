@@ -23,11 +23,12 @@ namespace YVR.Enterprise.Device
 
         /// <summary>
         /// If the application exists, it will be automatically started at startup
+        /// To modify the value, it is recommended to use <see cref="SetStartupApp"/>> function
         /// </summary>
         public string startupApp
         {
             get => GetStartupApp();
-            set => SetStartupApp(value, !string.IsNullOrWhiteSpace(value));
+            set => SetStartupApp(value, true);
         }
 
         /// <summary>
@@ -55,7 +56,12 @@ namespace YVR.Enterprise.Device
             set => SetConfigurationPermission(value);
         }
 
-        private void SetStartupApp(string packageName, bool active)
+        /// <summary>
+        /// Set the package name of the self-starting application
+        /// </summary>
+        /// <param name="packageName">Target package name</param>
+        /// <param name="active">Whether to active</param>
+        public void SetStartupApp(string packageName, bool active)
         {
             ajcBase.CallJNI(AppElements.setStartupApp, packageName, active);
         }

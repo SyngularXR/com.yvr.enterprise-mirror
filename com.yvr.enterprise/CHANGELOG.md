@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.16] - 2025-04-27
+
+### Added
+
+- 开放 kiosk mode 相关的 SetStartupApp(string packageName, bool active) 函数
+
 ## [0.0.15] - 2025-04-27
 
 ### Added
