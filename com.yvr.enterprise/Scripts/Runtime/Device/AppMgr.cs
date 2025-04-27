@@ -27,7 +27,7 @@ namespace YVR.Enterprise.Device
         public string startupApp
         {
             get => GetStartupApp();
-            set => SetStartupApp(value, string.IsNullOrWhiteSpace(value));
+            set => SetStartupApp(value, !string.IsNullOrWhiteSpace(value));
         }
 
         /// <summary>
