@@ -2,20 +2,20 @@ using UnityEngine;
 
 namespace YVR.Enterprise.Device
 {
-    public abstract class DevicePlugin
+    public abstract class CorePlugin
     {
-        private static DevicePlugin s_Instance;
+        private static CorePlugin s_Instance;
 
-        public static DevicePlugin Instance
+        public static CorePlugin Instance
         {
             get
             {
                 if (s_Instance == null)
                 {
                     if (!Application.isEditor && Application.platform == RuntimePlatform.Android)
-                        s_Instance = DeviceAndroidPlugin.Create();
+                        s_Instance = CoreAndroidPlugin.Create();
                     else
-                        s_Instance = DeviceEditorPlugin.Create();
+                        s_Instance = CoreEditorPlugin.Create();
                 }
 
                 return s_Instance;

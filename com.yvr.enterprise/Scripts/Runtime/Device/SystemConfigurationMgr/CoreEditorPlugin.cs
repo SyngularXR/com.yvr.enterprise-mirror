@@ -1,6 +1,6 @@
 namespace YVR.Enterprise.Device
 {
-    public class DeviceEditorPlugin:DevicePlugin
+    public class CoreEditorPlugin:CorePlugin
     {
 
         private static void YVRSetIPDEnable(bool enable) { }
@@ -11,7 +11,7 @@ namespace YVR.Enterprise.Device
 
         private static float YVRGetIPDVale() { return -1; }
         
-        public static DeviceEditorPlugin Create(){ return new DeviceEditorPlugin();;}
+        public static CoreEditorPlugin Create(){ return new CoreEditorPlugin();;}
         
         public override void SetIPDEnable(bool enable){ YVRSetIPDEnable(enable); }
         public override bool GetIPDEnable() { return YVRGetIPDEnable();}
