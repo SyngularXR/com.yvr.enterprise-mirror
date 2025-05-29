@@ -160,6 +160,19 @@ namespace YVR.Enterprise.Device
             return value == 1;
         }
 
+        public bool IsETFRScreenEnable()
+        {
+            int value = ajcBase.CallJNI<int>(SystemConfigurationElements.getSystemSettingsInt,
+                                             "xr_etfr_screen_enabled");
+            return value == 1;
+        }
+
+        public void SetScreenETFRModeEnable(bool enable)
+        {
+            ajcBase.CallJNI<bool>(SystemConfigurationElements.setSystemSettingsInt, "xr_etfr_screen_enabled",
+                                  enable ? 1 : 0);
+        }
+
         public void SetETFREnable(bool enable)
         {
             ajcBase.CallJNI<bool>(SystemConfigurationElements.setSystemSettingsInt, "xr_etfr_render_focus",
@@ -168,12 +181,9 @@ namespace YVR.Enterprise.Device
 
         public bool Is4KRenderingMode()
         {
-            int etfrVal = ajcBase.CallJNI<int>(SystemConfigurationElements.getSystemSettingsInt,
-                                               "xr_etfr_render_focus");
-
             int _4kMode = ajcBase.CallJNI<int>(SystemConfigurationElements.getSystemSettingsInt, "xr_display_4k_mode");
 
-            return etfrVal == 0 && _4kMode == 1;
+            return _4kMode == 1;
         }
 
         public void Set4KRenderingMode(bool enable)
