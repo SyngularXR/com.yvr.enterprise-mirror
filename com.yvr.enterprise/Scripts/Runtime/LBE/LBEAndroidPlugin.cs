@@ -50,14 +50,10 @@ namespace YVR.Enterprise.LBE
         [MonoPInvokeCallback(typeof(Action<MarkerTrackingUpdateData>))]
         private static void MarkerTrackingUpdateDataCallback(MarkerTrackingUpdateData markerTrackingUpdateData)
         {
-            // These handling should move to c++ part
             Vector3 position = markerTrackingUpdateData.markerPose.position;
             position.y -= trackingOriginMode == TrackingOriginModeFlags.Floor ? YVRGetBoundaryDistance() : 0;
-            position = position.FromFlippedZVector3f();
             
             markerTrackingUpdateData.markerPose.position = position;
-            markerTrackingUpdateData.markerPose.orientation
-                = markerTrackingUpdateData.markerPose.orientation.FromFlippedZQuatf();
             trackingUpdateAction?.Invoke(markerTrackingUpdateData);
         }
 
