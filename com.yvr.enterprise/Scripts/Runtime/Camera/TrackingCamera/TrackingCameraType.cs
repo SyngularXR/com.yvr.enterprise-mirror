@@ -5,6 +5,7 @@ namespace YVR.Enterprise.Camera
         TrackingMaster,
         TrackingSlave,
         TrackingAux,
+        EyeTracking,
         Max = 5
     }
 }

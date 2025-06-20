@@ -1,4 +1,18 @@
 # Changelog
+
+## [0.1.5] - 2025-06-20
+
+### Added
+
+- 为TrackingCameraType添加新类型枚举
+
+## [0.1.4] - 2025-06-18
+
+### Added
+
+- 添加 LargeSpatialMgr
+
+
 ## [0.1.3] - 2025-06-12
 
 ### changed
