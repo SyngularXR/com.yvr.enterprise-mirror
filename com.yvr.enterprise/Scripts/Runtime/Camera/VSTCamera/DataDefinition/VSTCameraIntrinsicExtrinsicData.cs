@@ -18,11 +18,19 @@ namespace YVR.Enterprise.Camera
         public double ry;
         public double rz;
 
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 16)]
+        float[] distortion;   // distortion parameters
+
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 128)]
+        uint[] reserved;  // reserved
+
         public override string ToString()
         {
             return $"Intrinsic: fx:{fx}, fy:{fy}, cx:{cx}, cy:{cy}\n" +
                    $"Extrinsic: Position(x:{x}, y:{y}, z:{z})\n" +
-                   $"Rotation(w:{rw}, x:{rx}, y:{ry}, z:{rz})";
+                   $"Rotation(w:{rw}, x:{rx}, y:{ry}, z:{rz})\n" +
+                   $"Distortion: [{string.Join(", ", distortion)}]\n" +
+                   $"Reserved: [{string.Join(", ", reserved)}]";
         }
     }
 }
