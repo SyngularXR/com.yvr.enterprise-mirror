@@ -31,7 +31,11 @@ namespace YVR.Enterprise.Camera
 
         [DllImport("enterprisePlugin")]
         private static extern void YVRGetVSTCameraIntrinsicExtrinsic(YVREyeNumberType eyeNumberType,
-                                                                     ref VSTCameraIntrinsicExtrinsicData data);
+            ref VSTCameraIntrinsicExtrinsicData data);
+
+        [DllImport("enterprisePlugin")]
+        private static extern void YVRGetVSTCameraIntrinsicExtrinsicRelativeToIMU(YVREyeNumberType eyeNumberType,
+            ref VSTCameraIntrinsicExtrinsicData data);
 
         [DllImport("enterprisePlugin")]
         private static extern void YVROpenVSTCamera();
@@ -86,6 +90,12 @@ namespace YVR.Enterprise.Camera
                                                           ref VSTCameraIntrinsicExtrinsicData data)
         {
             YVRGetVSTCameraIntrinsicExtrinsic(eyeNumberType, ref data);
+        }
+
+        public static void GetVSTCameraIntrinsicExtrinsicRelativeToIMU(YVREyeNumberType eyeNumberType,
+            ref VSTCameraIntrinsicExtrinsicData data)
+        {
+            YVRGetVSTCameraIntrinsicExtrinsicRelativeToIMU(eyeNumberType, ref data);
         }
 
         public static void OpenVSTCamera() { YVROpenVSTCamera(); }
