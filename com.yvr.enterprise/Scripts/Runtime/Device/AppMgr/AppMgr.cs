@@ -68,6 +68,8 @@ namespace YVR.Enterprise.Device
             ajcBase.CallJNI(AppElements.silentUnInstall, pkg, JavaObjectConverter.CreatConsumerProxy(callback));
         }
 
+        public void OpenHomeSettings(string uri) { ajcBase.CallJNI(AppElements.openHomeSettings, uri); }
+
         public List<string> runningThirdPartyAppPackageName =>
             JavaObjectConverter.JavaListToCSharpList(ajcBase.CallJNI<AndroidJavaObject>(AppElements
                                                         .getRunningThirdPartyAppPackageName));

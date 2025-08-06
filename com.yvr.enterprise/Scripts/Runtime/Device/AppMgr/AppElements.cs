@@ -19,6 +19,7 @@ namespace YVR.Enterprise.Device
         public const string getTopRunningApp = "getTopRunningApp";
         public const string startWifiUI = "startWifiUI";
         public const string startBtUI = "startBtUI";
+        public const string openHomeSettings = "openHomeSettings";
        
         public const string setStartupApp = "setStartupApp";
         public const string getStartupApp = "getStartupApp";
